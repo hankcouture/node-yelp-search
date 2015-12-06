@@ -1,0 +1,43 @@
+
+
+body {
+	background-color: #f4f4f4;
+}
+
+.frame {
+	width: 800px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.frame input {
+	width: 200px;
+	font-size: 18px;
+	padding: 8px;
+	margin: 10px 0px 0px;
+}
+
+.frame button {
+	width: 220px;
+	font-size: 18px;
+	background-color: #3B94D9;
+	color: #fff;
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
+	margin: 10px 0px 30px;
+}
+
+.business {
+	height: 100px;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.business img, h1 {
+	float: left;
+}

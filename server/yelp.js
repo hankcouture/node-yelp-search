@@ -9,7 +9,7 @@ var yelp = new Yelp(tokens.apiData);
 
 module.exports = {
 	search: function(termSearch, locationSearch, callback) {
-		yelp.search({ term: termSearch, location: locationSearch })
+		yelp.search({ term: termSearch, location: locationSearch, sort: 2 })
 		.then(function (data) {
 		  callback(data);
 		})
