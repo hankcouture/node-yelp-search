@@ -7,7 +7,9 @@ var displayResults = function(searchTerm, location, data) {
     var name = biz[i].name;
     var rating = biz[i].rating_img_url;
     var img = biz[i].image_url;
+    var neighborhood = biz[i].location.neighborhoods;
     var html = '<div class="business"><img src="'+img+'"><h1>'+name+'</h1><img src="'+rating+'"></div>';
+    console.log(neighborhood);
     $('.results').append(html);  
   }
 }

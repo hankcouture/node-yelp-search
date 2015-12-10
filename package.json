@@ -1,6 +1,10 @@
 {
   "name": "node-yelp",
   "version": "0.0.1",
+  "engines": {
+    "node" : "5.2.x",
+    "npm" : "3.3.x"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {

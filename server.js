@@ -3,7 +3,7 @@ var express = require('express');
 var fs = require('fs');
 var yelp = require('./yelp.js');
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 var ip = "127.0.0.1";
 console.log("Listening on http://" + ip + ":" + port);
 
@@ -11,7 +11,7 @@ console.log("Listening on http://" + ip + ":" + port);
 // Using Express.js
 var app = express();
 
-app.use(express.static('../public'));
+app.use(express.static('./public'));
 
 app.post('/', function(req, res) {
 	res.setHeader('Content-Type', "application/json");
@@ -24,4 +24,4 @@ app.post('/', function(req, res) {
     });
 })
 
-app.listen(port, ip);
+app.listen(port);
